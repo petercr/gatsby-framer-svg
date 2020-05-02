@@ -259,7 +259,7 @@ export default function MainSVG() {
         transform="translate(-155.99682 -173.60957)"
         d="M494.81971,614.10957h226.368v-429h-226.368Z"
       />
-      <MotionBar />
+      <MotionBar delayNumber={2} />
       <rect
         id="rect68"
         fill="#e6e6e6"
