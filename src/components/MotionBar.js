@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 
 import { motion, useAnimation } from 'framer-motion'
 
-const MotionBar = ({ delayNumber }) => {
+const MotionBar = ({ delayNumber, id, fill, height, width, x, y }) => {
   const controls = useAnimation()
 
   useEffect(() => {
     controls.start(i => ({
-      width: 58.84611,
+      width,
       transition: {
         delay: 1.5,
         duration: i,
@@ -19,7 +19,7 @@ const MotionBar = ({ delayNumber }) => {
   const variants = {
     start: { width: 0 },
     finish: {
-      width: 58.84611,
+      width,
     },
   }
 
@@ -29,18 +29,24 @@ const MotionBar = ({ delayNumber }) => {
       animate={controls}
       custom={delayNumber}
       variants={variants}
-      id="rect66"
-      fill="#f9a826"
-      height="5.46471"
-      width="58.84611"
-      y="110.16081"
-      x="428.6814"
+      id={id}
+      fill={fill}
+      height={height}
+      width={width}
+      y={y}
+      x={x}
     />
   )
 }
 
 MotionBar.propTypes = {
   delayNumber: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
+  fill: PropTypes.string.isRequired,
+  height: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
+  y: PropTypes.number.isRequired,
+  x: PropTypes.number.isRequired,
 }
 
 export default MotionBar
