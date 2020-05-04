@@ -259,7 +259,15 @@ export default function MainSVG() {
         transform="translate(-155.99682 -173.60957)"
         d="M494.81971,614.10957h226.368v-429h-226.368Z"
       />
-      <MotionBar delayNumber={2} />
+      <MotionBar
+        delayNumber={1}
+        id="rect66"
+        fill="#f9a826"
+        height="5.46471"
+        width="58.84611"
+        y="110.16081"
+        x="428.6814"
+      />
       <rect
         id="rect68"
         fill="#e6e6e6"
@@ -284,7 +292,8 @@ export default function MainSVG() {
         y="110.24195"
         x="372.7685"
       />
-      <rect
+      <MotionBar
+        delayNumber={2}
         id="rect74"
         fill="#f9a826"
         height="5.46471"
@@ -316,7 +325,8 @@ export default function MainSVG() {
         y="204.18171"
         x="372.7685"
       />
-      <rect
+      <MotionBar
+        delayNumber={3}
         id="rect82"
         fill="#f9a826"
         height="5.46471"
