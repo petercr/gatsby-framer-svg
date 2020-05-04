@@ -8,6 +8,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#rect66,
+#rect74,
+#rect82 {
+  fill: blue;
+}
+
 article,
 aside,
 details,
