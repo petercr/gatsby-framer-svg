@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { motion, useViewportScroll } from 'framer-motion'
 import MotionBar from './MotionBar'
 
 export default function MainSVG() {
+  const { scrollYProgress } = useViewportScroll()
+
+  useEffect(
+    scrollYProgress => {
+      if (window) {
+        window.addEventListener(`scroll`, scrollYProgress =>
+          console.log(scrollYProgress)
+        )
+      }
+      return () => {
+        window.removeEventListener(`scroll`)
+      }
+    },
+    [scrollYProgress]
+  )
+
   return (
-    <svg
+    <motion.svg
+      style={{ scaleX: scrollYProgress }}
       // xmlns: dc="http://purl.org/dc/elements/1.1/"
       // xmlns: cc="http://creativecommons.org/ns#"
       // xmlns: rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -413,6 +431,6 @@ export default function MainSVG() {
         transform="translate(-155.99682 -173.60957)"
         d="M457.50369,349.10957s-21-15-10-33c7.63117-12.48738,23.44411-11.49893,32.414-9.72226a15.154,15.154,0,0,1,11.086,8.72226c1.5,3.5,1.5,7-4.5,7-12,0-6,9-6,9s-8,2-6,9S457.50369,349.10957,457.50369,349.10957Z"
       />
-    </svg>
+    </motion.svg>
   )
 }
