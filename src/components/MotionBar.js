@@ -14,7 +14,7 @@ const MotionBar = ({ delayNumber, id, fill, height, width, x, y }) => {
         duration: i,
       },
     }))
-  }, [controls])
+  }, [controls, width])
 
   const variants = {
     start: { width: 0 },
@@ -43,10 +43,10 @@ MotionBar.propTypes = {
   delayNumber: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
   fill: PropTypes.string.isRequired,
-  height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired,
-  y: PropTypes.number.isRequired,
-  x: PropTypes.number.isRequired,
+  height: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  y: PropTypes.string.isRequired,
+  x: PropTypes.string.isRequired,
 }
 
 export default MotionBar
