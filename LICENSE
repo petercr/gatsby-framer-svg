@@ -1,10 +1,15 @@
-# Please Note This is Under Construction
+# Welcome to my GatsbyJS and Framer Motion Project
 
-I have to double check the License on the UnDraw SVG, before I post the rest of the details
+This project is under an MIT License, and so is [GatsbyJS](https://gatsbyjs.org)
 
-This site is built with [Gastby JS](https://www.gatsbyjs.org/)
+The [unDraw.co](https://undraw.co/) SVG picture is licensed by unDraw [here is the link to the full text license](https://undraw.co/license).
+
+
+This site is built with [GatsbyJS](https://www.gatsbyjs.org/)
+And makes use of the awesome [Framer Motion API](https://www.framer.com/api/motion/)
 
 Their License is shown below: ⬇️
+Mine is an extension of the same license 😄
 
 The MIT License (MIT)
 
