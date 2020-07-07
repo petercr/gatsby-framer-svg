@@ -21,7 +21,7 @@ export default function MainSVG() {
 
   return (
     <motion.svg
-      style={{ scaleX: scrollYProgress }}
+      // style={{ scaleX: scrollYProgress }}
       // xmlns: dc="http://purl.org/dc/elements/1.1/"
       // xmlns: cc="http://creativecommons.org/ns#"
       // xmlns: rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -302,7 +302,9 @@ export default function MainSVG() {
         y="147.96916"
         x="428.6814"
       />
-      <rect
+      <motion.rect
+      animate={ {rotate: 360}}
+      transition={{ duration: 2}}
         id="rect72"
         fill="#f9a826"
         height="43.71772"
